@@ -76,7 +76,7 @@ For best results, run **WpnService Watcher** automatically using **Windows Task 
    * Program/script:
 
 ```
-WpnService Watcher.exe
+WpnService-Watcher.exe
 ```
 
 6. In **Conditions**
