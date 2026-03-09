@@ -47,7 +47,7 @@ pip install pywin32 pyinstaller
 Build executable:
 
 ```
-pyinstaller --clean --onefile --noconsole --uac-admin --icon=icon.ico --name=WpnWatcher wpn_watcher.py
+pyinstaller --clean --onefile --noconsole --uac-admin --icon=icon.ico main.py
 ```
 
 ## Disclaimer
