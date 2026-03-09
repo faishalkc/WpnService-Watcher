@@ -50,6 +50,46 @@ Build executable:
 pyinstaller --clean --onefile --noconsole --uac-admin --icon=icon.ico main.py
 ```
 
+## Run Automatically (Task Scheduler)
+
+For best results, run **WpnService Watcher** automatically using **Windows Task Scheduler**.
+
+### Recommended configuration
+
+1. Open **Task Scheduler**
+
+2. Click **Create Task**
+
+3. In **General**
+
+   * Name: `WpnService Watcher`
+   * Select **Run only when user is logged on**
+   * Enable **Run with highest privileges**
+
+4. In **Triggers**
+
+   * Add trigger: **At log on of any user**
+
+5. In **Actions**
+
+   * Action: **Start a program**
+   * Program/script:
+
+```
+WpnService Watcher.exe
+```
+
+6. In **Conditions**
+
+   * Disable **Start the task only if the computer is on AC power**
+
+7. In **Settings**
+
+   * Enable **Allow task to be run on demand**
+   * Enable **Run task as soon as possible after a scheduled start is missed**
+
+This ensures the watcher starts automatically every time Windows boots.
+
 ## Disclaimer
 
 Stopping Windows notification services may disable notifications for some applications.
