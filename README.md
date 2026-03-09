@@ -36,6 +36,16 @@ This watcher continuously ensures these services remain stopped.
 C:\Windows\Logs\wpn_watcher.log
 ```
 
+## Log Output
+
+```
+2026-04-01 10:15:02.118 [ENFORCE] Watcher started. IntervalSeconds=2
+2026-04-01 10:15:02.173 [ENFORCE] RUNNING: WpnService PID=1936 HostedServices=[Appinfo, BITS, IpHlpSvc, LanmanServer, PushToInstall, Schedule, ShellHWDetection, Themes, TokenBroker, UserManager, Winmgmt, wlidsvc, WpnService, wuauserv] Action=STOPPING
+2026-04-01 10:15:02.175 [ENFORCE] STOPPED: WpnService
+2026-04-01 10:15:02.198 [ENFORCE] RUNNING: WpnUserService_7df85 PID=6916 HostedServices=[CDPUserSvc_7df85, PimIndexMaintenanceSvc_7df85, UnistoreSvc_7df85, UserDataSvc_7df85, WpnUserService_7df85] Action=STOPPING
+2026-04-01 10:15:02.200 [ENFORCE] STOPPED: WpnUserService_7df85
+```
+
 ## Build
 
 Requires Python and PyInstaller.
